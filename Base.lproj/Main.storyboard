@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaPikachu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="D9T-9j-p0w" userLabel="Pikachu Image View">
+                                <rect key="frame" x="0.0" y="121" width="414" height="175"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Nn-Ku-0pi">
+                                <rect key="frame" x="172.66666666666666" y="362" width="69" height="45"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <state key="normal" title="hit me"/>
+                                <connections>
+                                    <action selector="changeBackgroundColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7E1-YG-fbU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pikachu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBS-cF-09p">
+                                <rect key="frame" x="125" y="316" width="164" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="tmC-sn-Qc7"/>
+                                    <constraint firstAttribute="width" constant="164" id="yVG-rU-eWr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wBS-cF-09p" firstAttribute="top" secondItem="D9T-9j-p0w" secondAttribute="bottom" constant="20" id="6be-me-7tk"/>
+                            <constraint firstItem="wBS-cF-09p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BAE-5Z-kvO"/>
+                            <constraint firstItem="D9T-9j-p0w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="DMt-g4-n1b"/>
+                            <constraint firstItem="D9T-9j-p0w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MPT-DF-cn1"/>
+                            <constraint firstItem="wBS-cF-09p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qef-tB-sef"/>
+                            <constraint firstItem="5Nn-Ku-0pi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Te1-ah-hBZ"/>
+                            <constraint firstItem="D9T-9j-p0w" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="X5b-gB-gaY"/>
+                            <constraint firstItem="5Nn-Ku-0pi" firstAttribute="top" secondItem="wBS-cF-09p" secondAttribute="bottom" constant="10" id="uL1-aM-0es"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pikaLable" destination="wBS-cF-09p" id="Q3Q-RP-qR0"/>
+                        <outlet property="pikachuImageView" destination="D9T-9j-p0w" id="9rP-4D-0ek"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84.057971014492765" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pikachu" width="159.66667175292969" height="175.66667175292969"/>
+    </resources>
+</document>
